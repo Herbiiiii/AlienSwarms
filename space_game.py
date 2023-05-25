@@ -81,8 +81,11 @@ def draw_about():
     screen.blit(title_text, title_rect)
     # Нарисовать информацию об авторе
     author_text = menu_font.render("Бондарев С.А. БСБО-11-21", True, WHITE)
+    author_text2 = menu_font.render("Гельманов Р.М. БСБО-11-21", True, WHITE)
     author_rect = author_text.get_rect(center=(screen_width // 2, screen_height // 2))
+    author_rect2 = author_text2.get_rect(center=(screen_width // 2, screen_height // 1.5))
     screen.blit(author_text, author_rect)
+    screen.blit(author_text2, author_rect2)
 
     pygame.display.flip()
 
